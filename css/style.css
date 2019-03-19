@@ -1,0 +1,333 @@
+@font-face {
+  font-family: Avante;
+  src: url(../font/6796.ttf);
+  font-weight: bold;
+  
+  /* Имя шрифта */
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Avante;
+  src: url(../font/6810.ttf);
+  font-weight: normal;
+  
+  /* Имя шрифта */
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: icomoon;
+  src: url(../font/icomoon/fonts/icomoon.ttf);
+  font-weight: normal;
+  
+  /* Имя шрифта */
+  /* Путь к файлу со шрифтом */
+}
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Avante;
+  color: #181818;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1155px;
+  margin: 0 auto;
+}
+header {
+  z-index: 11;
+  position: relative;
+}
+header .line {
+  background: url(../image/red-line.jpg);
+  width: 100%;
+  height: 26px;
+  background-size: cover;
+}
+header .block {
+  width: 100%;
+  display: flex;
+}
+header .block .logo {
+  display: block;
+  background: url(../image/logo.png);
+  width: 108px;
+  height: 155px;
+  background-repeat: no-repeat;
+  margin: 30px 0 0 62px;
+}
+header .block .vertical-line {
+  background: url(../image/vertical-line.jpg);
+  width: 13px;
+  height: 184px;
+  background-repeat: no-repeat;
+  margin: 0 62px;
+}
+header .block .ml11 {
+  font-family: Avante;
+  font-size: 3.5em;
+}
+header .block .ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+header .block .ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+header .block .ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+header .block .ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+header .block .ml11 .letter.first {
+  font-weight: bold;
+}
+header .block .ml11 .letter.last {
+  font-weight: normal;
+}
+header .block .bottom .get_tikets {
+  background: url(../image/button-bg.jpg);
+  width: 240px;
+  height: 50px;
+  padding: 11px 0 17px 75px;
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+header .block .bottom .get_tikets:hover {
+  background: #ec3438;
+  transition: 1s all;
+}
+header .block .bottom .get_tikets:before {
+  position: absolute;
+  content: '';
+  background: url(../image/ticket-alt.png);
+  background-repeat: no-repeat;
+  height: 13px;
+  width: 21px;
+  left: 28px;
+  top: 20px;
+}
+.video .wave {
+  background: url(../image/wave1.png);
+  width: 100%;
+  height: 410px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+  margin-top: -230px;
+  margin-bottom: -174px;
+  position: absolute;
+}
+.video .square {
+  position: absolute;
+  content: '';
+  background: url(../image/square.gif);
+  right: 0;
+  margin-top: -81px;
+  min-height: 636px;
+  background-repeat: no-repeat;
+  z-index: 4;
+  width: 536px;
+  display: flex;
+}
+.video #show_video {
+  height: 755px;
+  max-height: 755px;
+  min-height: 755px;
+  position: relative;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  perspective: 1000;
+  right: 0;
+  z-index: -1;
+  filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+}
+.video .wave2 {
+  width: 100%;
+  margin-top: -315px;
+  position: absolute;
+}
+.video .wave2 div {
+  background: white;
+  height: 350px;
+  margin-top: -5px;
+}
+.video .wave2 img {
+  width: 100%;
+}
+.about {
+  width: 1115px;
+  position: relative;
+  z-index: 11;
+  margin: -200px auto 200px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 55px 75px 38px 160px ;
+  -webkit-box-shadow: 0px 5px 15px 6px rgba(238, 238, 238, 0.5);
+  box-shadow: 0px 5px 15px 6px rgba(238, 238, 238, 0.5);
+}
+.about:before {
+  position: absolute;
+  content: '';
+  background: #ec3438;
+  height: 10px;
+  width: 133px;
+  bottom: -10px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about:after {
+  position: absolute;
+  content: '';
+  background: url(../image/_triangle.png);
+  height: 387px;
+  width: 497px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 30%;
+  left: -130px;
+}
+.about h3 {
+  position: absolute;
+  display: flex;
+  background-color: #ec3438;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+  top: -15px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
+}
+.about p {
+  font-size: 16px;
+  color: #181818;
+  letter-spacing: 1.5px;
+  margin: 0;
+  line-height: 1.5;
+}
+.about p.second {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px 0 20px;
+}
+.about p.second span {
+  color: #ec3438;
+  line-height: 1.5;
+  margin: 0 auto;
+  background-color: #eeeeee;
+  position: relative;
+}
+.about p.second span.techno:after {
+  font-family: icomoon;
+  content: '\e901';
+  color: #181818;
+  margin: 0 10px;
+}
+.about p.second span.creat:after {
+  font-family: icomoon;
+  content: '\e900';
+  color: #181818;
+  margin: 0 10px;
+}
+footer {
+  position: relative;
+}
+footer .footer_bottom {
+  height: 86px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  background-color: #f5f5f5;
+  margin-bottom: 100px;
+}
+footer .footer_bottom .footer_line {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  background-image: url(../image/footter_wave2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  max-width: 60%;
+  height: calc(100% + 234px);
+  top: -130px;
+}
+footer .footer_bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+footer .footer_bottom .container .company {
+  font-size: 16px;
+  color: #000;
+  font-family: Avante;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+footer .footer_bottom .container .privacy_policy {
+  font-size: 16px;
+  color: #000;
+  font-family: Avante;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+@media (min-width: 1800px) {
+  .video .wave {
+    height: 525px;
+  }
+  .video .square {
+    margin-top: 100px;
+  }
+  footer .footer_bottom .footer_line {
+    width: 1200px;
+    max-width: 60%;
+    height: calc(100% + 234px);
+    top: -130px;
+  }
+}
+@media (max-width: 1375px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .about {
+    width: 90%;
+  }
+  footer .footer_bottom .footer_line {
+    top: -90px;
+  }
+}
