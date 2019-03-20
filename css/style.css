@@ -201,8 +201,8 @@ header .block .bottom .get_tikets:before {
   background: #fff;
   border-radius: 20px;
   padding: 55px 75px 38px 160px ;
-  -webkit-box-shadow: 0px 5px 25px 6px rgba(238, 238, 238, 0.1);
-  box-shadow: 0px 5px 25px 6px rgba(238, 238, 238, 0.1);
+  -webkit-box-shadow: 0px 5px 25px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 25px 6px rgba(0, 0, 0, 0.1);
 }
 .about:before {
   position: absolute;
