@@ -203,7 +203,7 @@ header{
   width: 1115px;
   position: relative;
   z-index: 11;
-  margin: -200px auto 200px;
+  margin: -200px auto 150px;
   background: #fff;
   border-radius: 20px;
   padding: 55px 75px 38px 160px ;
@@ -364,6 +364,38 @@ footer{
     .footer_bottom{
       .footer_line{
         top: -90px;
+      }
+    }
+  } 
+    
+}
+
+@media (max-width: 930px) {
+  header .block .logo{
+    width: 73px;
+    height: 138px;
+    background-size: contain;
+  }
+  .letters{
+    font-size: 37px !important;
+  }
+  .about{
+    margin: -216px auto 60px;
+    padding: 45px 45px 38px 45px;
+    &:after{
+    display:none;
+    }
+  }
+  .video .square{
+    display: none;
+  }
+  footer{
+    .footer_bottom{
+      margin-bottom: 0;
+      .footer_line{
+        top: -90px;
+        height: ~"calc(100% + 90px)";
+        display: none;
       }
     }
   } 
