@@ -179,7 +179,7 @@ header .block .bottom .get_tikets:before {
   -webkit-perspective: 1000;
           perspective: 1000;
   right: 0;
-  top: -22px;
+  top: -40px;
   z-index: -1;
   -webkit-filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
           filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
@@ -201,7 +201,7 @@ header .block .bottom .get_tikets:before {
   width: 1115px;
   position: relative;
   z-index: 11;
-  margin: -400px auto 150px;
+  margin: -450px auto 150px;
   background: #fff;
   border-radius: 20px;
   padding: 40px 0px 38px 0px;
