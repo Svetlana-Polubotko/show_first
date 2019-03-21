@@ -341,6 +341,7 @@ footer .footer_bottom .container .footer_line {
 @media (max-width: 1375px) {
   .container {
     padding: 0 20px;
+    width: 100%s;
   }
   footer .footer_bottom .footer_line {
     top: -90px;
