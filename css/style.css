@@ -198,13 +198,13 @@ header .block .bottom .get_tikets:before {
   width: 100%;
 }
 .about {
-  width: 1115px;
   position: relative;
   z-index: 11;
   margin: -450px auto 150px;
   background: #fff;
   border-radius: 20px;
   padding: 40px 0px 38px 0px;
+  max-width: 600px;
   text-align: center;
   -webkit-box-shadow: 0px 5px 25px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 5px 25px 6px rgba(0, 0, 0, 0.1);
@@ -341,10 +341,6 @@ footer .footer_bottom .container .footer_line {
 @media (max-width: 1375px) {
   .container {
     padding: 0 20px;
-  }
-  .about {
-    max-width: 600px;
-    text-align: center;
   }
   footer .footer_bottom .footer_line {
     top: -90px;
