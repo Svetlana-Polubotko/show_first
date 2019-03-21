@@ -211,7 +211,8 @@ header{
   margin: -400px auto 150px;
   background: #fff;
   border-radius: 20px;
-  padding: 55px 75px 38px 160px ;
+  padding: 40px 0px 38px 0px;
+  text-align: center;
   -webkit-box-shadow: 0px 5px 25px 6px rgba(0,0,0,0.1); 
   box-shadow: 0px 5px 25px 6px rgba(0,0,0,0.1);
   &:before{
@@ -227,15 +228,15 @@ header{
   }
 
   &:after{
-    position:absolute;
+    position: absolute;
     content: '';
     background: url(../image/triangle.png);
-    height: 387px;
-    width: 497px;
-    background-size: cover;
+    height: 287px;
+    width: 297px;
+    background-size: contain;
     background-repeat: no-repeat;
     top: 30%;
-    left: -130px;
+    left: -90px;
 
   }
 
@@ -287,22 +288,6 @@ header{
           }
         }
       }
-    }
-}
-.text-center{
-    max-width: 500px;
-    text-align: center;
-    margin: -50px auto 0;
-    color: black;
-    position: relative;
-    padding: 0 30px;
-
-    p{
-          font-size: 16px;
-    color: #181818;
-    letter-spacing: 1.5px;
-    margin: 0;
-    line-height: 1.5;
     }
 }
 footer{
@@ -372,11 +357,11 @@ footer{
 
 @media (max-width: 1375px) {
   .container{
-    width: 100%;
     padding: 0 20px;
   }
   .about{
-    width: 90%;
+    max-width: 600px;
+    text-align: center;
   }
   footer{
     .footer_bottom{
