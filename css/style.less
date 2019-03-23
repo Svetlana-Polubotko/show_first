@@ -192,11 +192,11 @@ header{
     }
     .wave2 {
       width: 100%;
-      margin-top: -515px;
+      margin-top: -465px;
       position: absolute;
       div {
         background: white;
-        height: 350px;
+        height: 150px;
         margin-top: -5px;
       }
       img {
@@ -207,7 +207,7 @@ header{
 .about{
   position: relative;
   z-index: 11;
-  margin: -450px auto 150px;
+  margin: -350px auto 150px;
   background: #fff;
   border-radius: 20px;
   padding: 40px 0px 38px 0px;
@@ -293,6 +293,7 @@ footer{
   position: relative;
   overflow: hidden;
   padding-top: 55px;
+  margin-top: -50px;
   .footer_bottom_container{
     position: relative;
   }
@@ -342,43 +343,116 @@ footer{
    
   }
 }
+@media (min-width: 1775px) {
+  .video {
+    .wave{
+      height: 475px;
+    }
+    .wave2 div {
+      height: 65px;
+    }
+  }
+  
+}
 
 
-
-@media (max-width: 1375px) {
+@media (max-width: 1379px) {
   .container{
     padding: 0 20px;
     width: 100%;
+  } 
+}
+@media (max-width: 1023px) {
+  .letters_first{
+    font-size: 38px !important;
+  }
+  .letters_second{
+    font-size: 20px !important;
+  }
+  .video{
+    .wave2{
+      margin-top: -325px;
+      div{
+        height: 100px;
+      }
+    }
+    #show_video{
+      height: 550px;
+      max-height: 550px;
+      min-height: 550px;
+      top: -70px;
+    }
+    .square{
+     display: none;
+    }
+  } 
+  .about{
+    margin: -250px auto 150px;
+    &:after{
+      display: none;
+    }
   }
   footer{
-    .footer_bottom{
-      .footer_line{
-        top: -90px;
+    margin-top: -100px;
+  }
+
+}
+@media (max-width: 767px) {
+  header{
+    .line{
+      height: 10px;
+    }
+    .block{
+      flex-direction: column;
+      min-height: 260px;
+      .vertical-line{
+        display: none;
+      }
+      .logo{
+            margin: 27px auto;
+      }
+      h3{
+        line-height: 30px;
+        display: block;
+        margin: 0 auto 10px;
+        .text-wrapper{
+          text-align: center;
+        }
+        .letters_first{
+          font-size: 20px !important;
+        }
+        .letters_second{
+          font-size: 13px !important;
+        }
       }
     }
   } 
-    
-}
-
-@media (max-width: 930px) {
-  header .block .logo{
-    width: 73px;
-    height: 138px;
-    background-size: contain;
-  }
-  .letters{
-    font-size: 37px !important;
-  }
-  .about{
-    margin: -216px auto 60px;
-    padding: 45px 45px 38px 45px;
-    &:after{
-    display:none;
+  .video{
+    .wave2{
+      margin-top: -165px;
+      div{
+        height: 100px;
+      }
+    }
+    #show_video{
+      height: auto;
+      max-height: auto;
+      min-height: auto;
+      top: 0px;
     }
   }
-  .video .square{
-    display: none;
-  }
-
-    
+  .about{
+    margin: -90px auto 150px  } 
+}
+@media (max-width: 450px) {
+  .video{
+    #show_video{
+      top: -10px;
+    }
+    .wave2 {
+      margin-top: -109px;
+    }
+  } 
+  .about{
+    margin: 0px auto 150px  } 
 }
