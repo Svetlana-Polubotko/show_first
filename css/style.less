@@ -165,7 +165,7 @@ header{
     margin-top: -81px;
     min-height: 636px;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 80%;
     background-position-x: 100%;
     z-index: 4;
     width: 536px;
@@ -409,7 +409,7 @@ footer{
         display: none;
       }
       .logo{
-            margin: 27px auto;
+        margin: 27px auto 10px;
       }
       h3{
         line-height: 30px;
@@ -434,11 +434,15 @@ footer{
         height: 100px;
       }
     }
+    .wave{
+      margin-top: -250px;
+    }
     #show_video{
       height: auto;
       max-height: auto;
       min-height: auto;
-      top: 0px;
+      top: -20px;
+
     }
   }
   .about{
@@ -452,7 +456,21 @@ footer{
     .wave2 {
       margin-top: -109px;
     }
+
   } 
   .about{
     margin: 0px auto 150px  } 
+  footer .footer_bottom{
+        height: 110px;
+        padding: 10px 30px;
+      .footer_bottom_container{
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          .footer_line{
+                top: -12px;
+                width: 447px;
+          }
+      }
+    } 
 }
