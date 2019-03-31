@@ -32,11 +32,10 @@ $(document).ready(function(){
             return 34 * (i + 1)
         }
     });
+
+    // const firstSpan = $('.letter').first();
+    // firstSpan.addClass('times-new')
     }, 1000);
-
-
-    
-    
 
     $(function() {
                 
